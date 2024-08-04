@@ -1,0 +1,359 @@
+* {
+    box-sizing: border-box;
+    background-color: #000;
+    font-family:monospace;
+    color: #efefef;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0;}
+    
+/* scroll effect*/
+.container {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+}/* end scroll effect */
+
+.hidex{
+    display: none;
+}
+::selection{
+    background: #c22085;
+}
+/* bird ------------------*/
+.bird{
+    position: absolute;
+    animation: blink 55s infinite;
+    display: none;
+}
+@keyframes blink {
+    0%{
+        top:8.5%;
+        left: 0%;
+    }
+    75%{
+        top:8.5%;
+        left: 15%;
+    }
+    98%{
+        top:8.5%;
+        left: 80%;
+    }
+    100%{
+        top:8.5%;
+        left: 15%;
+    }
+}
+
+/*bird -----------------*/
+header{
+    border-bottom: 1px solid #11cc9e;
+    padding: 5px 15px;
+}
+.logo h1::first-letter{
+    color: #11cc9e;
+    font-size: 45px;
+    font-weight: 700;
+}
+header , .links ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+}
+header a:hover{
+    color: #11cc9e;
+}
+li{
+    list-style-type: none;
+    margin-left: 15px;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 95px 10px;
+}
+main h1{
+    font-size: 35px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+main h1 span{
+    color: #11cc9e;
+    font-size: 35px;
+    font-weight: 700;
+}
+main h3{
+    font-size: 35px;
+    color: #24aa89;
+    margin-bottom: 35px;
+}
+main img{
+    max-width: 250px;
+    margin-left: 5px;
+    border-radius: 15%;
+}
+.html {
+    color: #ed642a;
+    font-weight: 600;
+    font-size: 40px;
+}
+.css {
+    color: #196fb4;
+    font-weight: 600;
+    font-size: 40px;
+}
+.js {
+    color: #f0d91c;
+    font-weight: 600;
+    font-size: 40px;
+}
+.down{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/*----------------------------------Second PAge
+start here -----------------------------------*/
+
+.second-page{
+    height: 100vh;
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.second-page h1{
+    color: #ed462f;
+    margin: 5px 0 10px 0;
+}
+.second-page span{
+    color: #11cc9e;
+    font-size: 15px;
+}
+.second-page p{
+    margin: 40px 15px;
+    text-align: center;
+    color: rgb(233, 177, 113);
+}
+
+/* -----------------About Page
+---------------------------*/
+.about{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 75px  ;
+    width: 75%;
+    margin: auto;
+    height: 100%;
+}
+.about h1 , .about p{
+    display: inline;
+}
+.about h1{
+    color: greenyellow;
+    border-bottom: 1px dotted greenyellow;
+    border-radius: 40%;
+    font-size: 30px;
+}
+
+/*   contact page--------------
+-------------------------------*/
+#contact {
+    display: flex;
+
+}
+.contact{
+    width: 85%;
+    margin: auto;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.email a , .contact p{
+    display: inline;
+    font-size: 22px;
+    font-weight: 900;
+
+}
+.email a{
+    color: #11cc9e;
+}
+.form{
+    display: flex;
+flex-direction: column;
+align-items: start;
+margin-top: 20px;
+}
+.form input , .form textarea{
+    width: 500px;
+    border: none;
+    border-bottom: 1px solid darkolivegreen;
+
+}
+.form button{
+    margin: 20px auto;
+    border: none;
+    padding: 2px 15px;
+    background: darkolivegreen;
+    cursor: pointer;
+}
+
+/*  web linksssssssssssss------
+---------------*/
+.web{
+    width: 100%;
+    height: 100%;
+    padding: 10% 5%;
+    margin: auto;
+}
+.sentence{
+    height: 35%;
+}
+.web span {
+    text-decoration: underline;
+}
+.web-links{
+    display: flex;
+    height: 50%;
+    padding-bottom: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.web-links button{
+    margin: 0 20px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #11cc9e;
+    border-top: 1px solid #11cc9e;
+    opacity: 0.8;
+    
+}
+.web-links i{
+    margin-left: 30px;
+    color: #11cc9e;
+}
+.web-links a{
+    width: 30%;
+}
+
+
+@media (max-width : 768px){
+    header{
+        flex-direction: column;
+        padding: 0;
+    }
+    .logo{
+        border-bottom: 1px solid #11cc9e;
+    }
+    header a{
+        font-size: 11px;
+        font-weight: 200;
+        
+    }
+    li{
+        list-style-type: none;
+        margin: 0 10px;
+    }
+    main{
+        flex-direction: column;
+        padding: 50px 15px 20px 15px;
+    }
+    main img{
+        width: 165px;
+        margin: 10px;
+    }
+    main h1 , main h1 span , main h3{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .js , .css , .html {
+        font-size: 30px;
+    }
+    .down{
+    margin: 0;
+    margin-top: -15px;
+    }
+
+    /* ---------------second page ----------------*/
+    .second-page{
+        padding: 10px;
+    }
+    .second-page h1{
+        margin: 5px 0;
+    }
+    .second-page span{
+        color: #11cc9e;
+        font-size: 15px;
+    }
+    .second-page p{
+        margin: 10px 5px;
+    }
+/* ----------------------------------- about -----------------------------*/
+.about{
+    padding: 75px 50px  ;
+    width: 100%;
+}
+
+/*------------------------contact ------------------------*/
+
+.email a , .contact p{
+    display: block;
+    font-size: 15px;
+}
+.email{
+    text-align: center;
+}
+.form input , .form textarea{
+    width: 100%;
+}
+
+/*  bird -----------------*/ 
+
+@keyframes blink {
+    0%{
+        top:14%;
+    }
+    75%{
+        top:14%;
+    }
+    98%{
+        top:14%;
+    }
+    100%{
+        top:14%;
+    }
+}
+/* web ---links -------
+---------------------*/
+
+.web-links{
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.web-links a{
+    width: auto;
+}
+.sentence{
+    height: 20%;
+}
+}
